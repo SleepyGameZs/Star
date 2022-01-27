@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
+
+//The movement of the Player that also determine 
 public class MovementScript : MonoBehaviour
 {
     Rigidbody2D RBody2D;
     [SerializeField] float speed = 2f;
     Vector2 motionVector;
-    Animator animator; 
+    public Animator animator;
+    public int facing;
 
     void Awake()
     {
+        //
         RBody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
