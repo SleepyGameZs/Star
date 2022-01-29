@@ -13,6 +13,8 @@ public class ToolController : MonoBehaviour
     [SerializeField] TileReaderController tileReaderController;
     [SerializeField] MarkerManger markerManger;
     [SerializeField] float maxDistance = 2.5f;
+    [SerializeField] CropsManager cropsManager;
+    [SerializeField] TileData plowAbleTile;
 
     Vector3Int selectedTilePosition;
     bool selectable;
@@ -30,7 +32,11 @@ public class ToolController : MonoBehaviour
         CanSelectCheck();
         if (Input.GetMouseButtonDown(0))
         {
-            UseTool();
+            if(UseToolWorld() == true)
+            {
+                return;
+            }
+            UseToolGrid();
         }
     }
 
@@ -53,7 +59,7 @@ public class ToolController : MonoBehaviour
     }
 
     
-    private void UseTool()
+    private bool UseToolWorld()
     {
         Vector2 posistion = rigbody2D.position + character.lastMotionVector * offsetDistance;
 
@@ -65,7 +71,28 @@ public class ToolController : MonoBehaviour
             if(hit != null)
             {
                 hit.Hit();
-                break;
+                return true;
+            }
+        }
+        return false;
+    }
+    private void UseToolGrid()
+    {
+        if(selectable == true)
+        {
+            TileBase tileBase = tileReaderController.GetTileBase(selectedTilePosition);
+            TileData tileData = tileReaderController.GetTileData(tileBase);
+            if(tileData != plowAbleTile)
+            {
+                return;
+            }
+            if (cropsManager.Check(selectedTilePosition))
+            {
+                cropsManager.Seed(selectedTilePosition);
+            }
+            else
+            {
+                cropsManager.Plow(selectedTilePosition);
             }
         }
     }
