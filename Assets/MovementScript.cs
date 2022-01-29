@@ -12,7 +12,7 @@ public class MovementScript : MonoBehaviour
     Rigidbody2D RBody2D;
     [SerializeField] float speed = 2f;
     [SerializeField] MarkerManger markerManger;
-    //[SerializeField] TileMapReadController tileMapReadController;
+    [SerializeField] TileReaderController tileReaderController;
     Vector2 motionVector;
     public Vector2 lastMotionVector;
     public Animator animator;
@@ -26,7 +26,6 @@ public class MovementScript : MonoBehaviour
 
     private void Update()
     {
-        //Marker();
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
