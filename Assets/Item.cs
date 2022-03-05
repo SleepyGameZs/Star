@@ -7,6 +7,9 @@ using UnityEngine;
 public class Item : ScriptableObject
 {
     public string Name;
-    public bool stackAble;
+    public bool stackable;
     public Sprite icon;
+    public ToolAction onAction;
+    public ToolAction onTileAction;
+    public ToolAction onItemUsed;
 }

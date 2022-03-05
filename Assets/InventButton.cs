@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class InventButton : MonoBehaviour
+public class InventButton : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] Image icon;
     [SerializeField] Text text;
+    [SerializeField] Image highlight;
 
     int myIndex;
 
@@ -20,7 +22,7 @@ public class InventButton : MonoBehaviour
         icon.gameObject.SetActive(true); 
         icon.sprite = slot.item.icon;
 
-        if (slot.item.stackAble == true)
+        if (slot.item.stackable == true)
         {
             text.gameObject.SetActive(true);
             text.text = slot.count.ToString();
@@ -37,5 +39,16 @@ public class InventButton : MonoBehaviour
         icon.gameObject.SetActive(false);
 
         text.gameObject.SetActive(false);
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        ItemPanel itemPanel = transform.parent.GetComponent<ItemPanel>();
+        itemPanel.Onclick(myIndex);
+    }
+
+    public void Highlight(bool b)
+    {
+        highlight.gameObject.SetActive(b);
     }
 }

@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04864ac11c12dff458bca69424774235, type: 3}
-  m_Name: Stone
+  m_Name: Hoe
   m_EditorClassIdentifier: 
-  Name: Stone
-  stackAble: 1
-  icon: {fileID: 21300000, guid: 7d1e7106975006442824468214d7e5ab, type: 3}
+  Name: Hoe
+  stackAble: 0
+  icon: {fileID: 0}
+  onAction: {fileID: 0}
+  onTileAction: {fileID: 11400000, guid: 364eafb744bf7574796ebbd7d595d336, type: 2}

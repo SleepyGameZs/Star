@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: DottenSeeds
   m_EditorClassIdentifier: 
   Name: DottenSeed
-  stackAble: 1
+  stackable: 1
   icon: {fileID: 0}
+  onAction: {fileID: 0}
+  onTileAction: {fileID: 11400000, guid: 4f1b934e28bd2504f8981909356ac0ab, type: 2}
+  onItemUsed: {fileID: 11400000, guid: 4f1b934e28bd2504f8981909356ac0ab, type: 2}
