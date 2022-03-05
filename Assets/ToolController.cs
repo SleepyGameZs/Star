@@ -87,7 +87,7 @@ public class ToolController : MonoBehaviour
             if(item == null) { return; }
             if(item.onTileAction == null) { return; }
 
-            bool complete = item.onTileAction.OnApplyToTileMap(selectedTilePosition, tileReaderController);
+            bool complete = item.onTileAction.OnApplyToTileMap(selectedTilePosition, tileReaderController, item);
 
             if(complete == true)
             {

@@ -11,7 +11,7 @@ public class ToolAction : ScriptableObject
         return true;
     }
 
-    public virtual bool OnApplyToTileMap(Vector3Int gridPosition, TileReaderController tileReaderController)
+    public virtual bool OnApplyToTileMap(Vector3Int gridPosition, TileReaderController tileReaderController, Item item)
     {
         Debug.LogWarning("OnApplyToTileMap isn't implemented");
         return true;

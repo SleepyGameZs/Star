@@ -7,7 +7,7 @@ using UnityEngine.Tilemaps;
 public class HoeTile : ToolAction
 {
     [SerializeField] List<TileBase> canPlow;
-    public override bool OnApplyToTileMap(Vector3Int gridPosition, TileReaderController tileReaderController)
+    public override bool OnApplyToTileMap(Vector3Int gridPosition, TileReaderController tileReaderController, Item item)
     {
         TileBase tileToHoe = tileReaderController.GetTileBase(gridPosition);
 

@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Hoe
   m_EditorClassIdentifier: 
   Name: Hoe
-  stackAble: 0
-  icon: {fileID: 0}
+  stackable: 0
+  icon: {fileID: 21300000, guid: 5d7ff6b7cd7568a4d81197792107efea, type: 3}
   onAction: {fileID: 0}
   onTileAction: {fileID: 11400000, guid: 364eafb744bf7574796ebbd7d595d336, type: 2}
+  onItemUsed: {fileID: 0}
+  crop: {fileID: 0}
