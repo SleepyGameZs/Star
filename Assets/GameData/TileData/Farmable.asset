@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 776f9de1e055f4d44a3cdf92349fe641, type: 3}
+  m_Name: Farmable
+  m_EditorClassIdentifier: 
+  tiles:
+  - {fileID: 11400000, guid: 8c5ad59c0e04af140b77a32ee4efe055, type: 2}
+  - {fileID: 11400000, guid: 96a7de909553c524596c74c1ca11d2d1, type: 2}
+  - {fileID: 11400000, guid: 642642f2590861f4e92c3858cb9ed7e3, type: 2}
+  - {fileID: 11400000, guid: 6eb4632e744274d4a965c857a646ae03, type: 2}
+  - {fileID: 11400000, guid: 25c6610aa14408d4092455c366df25d3, type: 2}
+  - {fileID: 11400000, guid: a79b08b9c588fc947be3716658c3753f, type: 2}
+  - {fileID: 11400000, guid: b671823f3390db048af8b396fa2c02f3, type: 2}
+  - {fileID: 11400000, guid: 5ea988136a32ad842b2ee2808ffa2884, type: 2}
+  - {fileID: 11400000, guid: 0c013b0ce84bc604d95c95bba4a60853, type: 2}
+  - {fileID: 11400000, guid: cea735bed77d1b843867998b4e7b754b, type: 2}
+  farmable: 1
