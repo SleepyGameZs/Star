@@ -17,7 +17,6 @@ public class HoeTile : ToolAction
         }
 
         tileReaderController.cropsManager.Plow(gridPosition);
-
         return true;
     }
 }
