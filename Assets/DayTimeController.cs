@@ -102,10 +102,6 @@ public class DayTimeController : MonoBehaviour
                 agents[x].Invoke();
             }
         }
-
-        /*
-        
-        */
     }
 
     private void NextDay()

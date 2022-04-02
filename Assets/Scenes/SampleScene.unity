@@ -802,7 +802,7 @@ TilemapRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
-  m_RenderingLayerMask: 7
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
@@ -3519,8 +3519,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plowed: {fileID: 11400000, guid: cea735bed77d1b843867998b4e7b754b, type: 2}
-  seeded: {fileID: 11400000, guid: 57d0320616f1f674d9b3e8421e68d988, type: 2}
+  seeded: {fileID: 11400000, guid: 337f9d870807c44418ca95a729bf9417, type: 2}
   targetTileMap: {fileID: 137217120}
+  cropSpritePrefab: {fileID: 8334260354491472904, guid: 96dc5f482267e10498cce906ddef549a,
+    type: 3}
 --- !u!114 &665262313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4524,6 +4526,7 @@ MonoBehaviour:
   tileReaderController: {fileID: 665262310}
   markerManger: {fileID: 520456789}
   maxDistance: 2.5
+  onTilePickUp: {fileID: 11400000, guid: 071a55867600d2f4781ec91a814ee124, type: 2}
 --- !u!114 &861552751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6307,7 +6310,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.7125306, y: 1}
+    m_SensorSize: {x: 2.7017114, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

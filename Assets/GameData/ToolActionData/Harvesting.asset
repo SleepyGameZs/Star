@@ -9,11 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f019cfbf13e54aa40b506aa1f68c80cf, type: 3}
-  m_Name: New Crop
-  m_EditorClassIdentifier: 
-  timeToGrow: 10
-  yeild: {fileID: 11400000, guid: aafb957bf1b12724b8f0733ae56cd3bf, type: 2}
-  count: 1
-  spites: []
-  growthStageTime: 
+  m_Script: {fileID: 0}
+  m_Name: Harvesting
+  m_EditorClassIdentifier: Assembly-CSharp::NewBehaviourScript

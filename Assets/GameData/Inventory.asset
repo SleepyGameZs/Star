@@ -20,7 +20,7 @@ MonoBehaviour:
   - item: {fileID: 11400000, guid: 490790704fd97774ab91710854388755, type: 2}
     count: 0
   - item: {fileID: 11400000, guid: aafb957bf1b12724b8f0733ae56cd3bf, type: 2}
-    count: 50
+    count: 64
   - item: {fileID: 0}
     count: 0
   - item: {fileID: 0}
@@ -32,7 +32,7 @@ MonoBehaviour:
   - item: {fileID: 0}
     count: 0
   - item: {fileID: 11400000, guid: aafb957bf1b12724b8f0733ae56cd3bf, type: 2}
-    count: 20
+    count: 17
   - item: {fileID: 0}
     count: 0
   - item: {fileID: 0}

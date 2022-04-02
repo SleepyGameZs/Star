@@ -11,6 +11,24 @@ public class CropsTile
     public int growStage;
     public Crop crop;
     public SpriteRenderer renderer;
+
+    public bool Complete
+    {
+        get 
+        {
+            if(crop == null) { return false; }
+            return growTimer >= crop.timeToGrow;
+        }
+        
+    }
+
+    internal void Harvested()
+    {
+        growTimer = 0;
+        growStage = 0;
+        crop = null;
+        renderer.gameObject.SetActive(false);
+    }
 }
 public class CropsManager : TimeAgent
 {
@@ -36,6 +54,13 @@ public class CropsManager : TimeAgent
             {
                 continue;
             }
+
+            if (cropsTile.Complete)
+            {
+                Debug.Log("i'm done growing");
+                continue;
+            }
+
             cropsTile.growTimer += 1;
 
             if (cropsTile.growTimer >= cropsTile.crop.growthStageTime[cropsTile.growStage])
@@ -46,11 +71,7 @@ public class CropsManager : TimeAgent
                 cropsTile.growStage += 1;
             }
 
-            if (cropsTile.growTimer >= cropsTile.crop.timeToGrow)
-            {
-                Debug.Log("i'm done growing");
-                cropsTile.crop = null;
-            }
+            
         }
     }
 
@@ -87,6 +108,20 @@ public class CropsManager : TimeAgent
         crop.renderer = go.GetComponent<SpriteRenderer>();
 
         targetTileMap.SetTile(position, plowed); 
+    }
+    internal void PickUp(Vector3Int gridPosition)
+    {
+        Vector2Int position = (Vector2Int)gridPosition;
+        if (crops.ContainsKey(position) == false){ return; }
+
+        CropsTile cropsTile = crops[position];
+
+        //This is to harvest the crop I need to make is so the item goes directly into the iventory
+        if (cropsTile.Complete)
+        {
+            targetTileMap.SetTile(gridPosition, plowed);
+            cropsTile.Harvested();
+        }
     }
 }
 

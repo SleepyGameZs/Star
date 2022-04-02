@@ -18,6 +18,21 @@ public class ItemPanel : MonoBehaviour
         SetIndex();
         Show();
     }
+
+    private void OnEnable()
+    {
+        Show();
+    }
+
+    private void LateUpdate()
+    {
+        if (inventory.isDirty) 
+        {
+            Show();
+            inventory.isDirty = false;
+        }
+    }
+
     private void SetIndex()
     {
         for (int i = 0; i < inventory.slots.Count && i < buttons.Count; i++)
