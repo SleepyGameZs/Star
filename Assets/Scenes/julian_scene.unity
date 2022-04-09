@@ -296,7 +296,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7774919, y: 1}
+    m_SensorSize: {x: 1.7785124, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3143,7 +3143,7 @@ Tilemap:
   - first: {x: -15, y: -1, z: 0}
     second:
       m_TileIndex: 4
-      m_TileSpriteIndex: 8
+      m_TileSpriteIndex: 19
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -3179,7 +3179,7 @@ Tilemap:
   - first: {x: -11, y: -1, z: 0}
     second:
       m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 8
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -6267,9 +6267,11 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 223fb411da6ef1f418eb70e0b531e5b4, type: 2}
   - m_RefCount: 34
     m_Data: {fileID: 11400000, guid: 7a0a12ed08cd39e4ebf03ea4949ea3e3, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
-  - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: b48cae51b3fa046438178444d8cf3825, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 36
     m_Data: {fileID: 21300000, guid: 5080ea636d96d07418b9161ff4680214, type: 3}
   - m_RefCount: 15
@@ -6285,7 +6287,7 @@ Tilemap:
   - m_RefCount: 5
     m_Data: {fileID: 21300000, guid: 8deefd55a6b520d4a8d5b570e1b9ecf7, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: cc5774fda4804a3498006bc900001609, type: 3}
+    m_Data: {fileID: 21300000, guid: b48cae51b3fa046438178444d8cf3825, type: 3}
   - m_RefCount: 21
     m_Data: {fileID: 2363887066363732820, guid: e508cbc2c3d7a2844bb9207e7361aa35,
       type: 3}
@@ -6307,6 +6309,8 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: ac53ec00c826f1f40ab6c3db70455ea3, type: 3}
   - m_RefCount: 34
     m_Data: {fileID: 21300000, guid: 9cf9539c43bcd5f428c54862d4b9e964, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: cc5774fda4804a3498006bc900001609, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 480
     m_Data:
