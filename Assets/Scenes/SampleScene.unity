@@ -3471,6 +3471,7 @@ GameObject:
   - component: {fileID: 665262313}
   - component: {fileID: 665262314}
   - component: {fileID: 665262315}
+  - component: {fileID: 665262316}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3633,6 +3634,18 @@ MonoBehaviour:
   startAtTime: 28800
   text: {fileID: 608398219}
   globalLight: {fileID: 1423756412}
+--- !u!114 &665262316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665262309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03cf524d10f36247919500e3b391b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &677987668 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7605954810321589202, guid: 470688cdb8740d946bfaed3646deae50,
@@ -6310,7 +6323,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.7017114, y: 1}
+    m_SensorSize: {x: 2.721675, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7317,7 +7330,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: d428dc7113e297c4e9c1cd5d63b3f996, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

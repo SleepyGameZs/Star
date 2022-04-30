@@ -20,9 +20,9 @@ MonoBehaviour:
   - item: {fileID: 11400000, guid: 490790704fd97774ab91710854388755, type: 2}
     count: 0
   - item: {fileID: 11400000, guid: aafb957bf1b12724b8f0733ae56cd3bf, type: 2}
-    count: 64
-  - item: {fileID: 0}
-    count: 0
+    count: 34
+  - item: {fileID: 11400000, guid: 2d3dbd42b2e771947affa4b17076afd0, type: 2}
+    count: 4
   - item: {fileID: 0}
     count: 0
   - item: {fileID: 0}
@@ -93,3 +93,4 @@ MonoBehaviour:
     count: 0
   - item: {fileID: 0}
     count: 0
+  isDirty: 0

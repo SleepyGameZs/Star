@@ -11,4 +11,6 @@ public class Crop : ScriptableObject
 
     public List<Sprite> spites;
     public List<int> growthStageTime;
+
+
 }

@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class DayTimeController : MonoBehaviour
 {
+    //the SerialzedField and floats that list all the Rendering stuff and the floats the dictates the current time and day
+    //The rate of change for the day can be 
     const float secondsInDay = 86400f;
     const float phaseLength = 900f; // 15 minutes
 
@@ -44,17 +46,18 @@ public class DayTimeController : MonoBehaviour
         agents.Remove(timeAgent);
     }
 
-
+    //determines how many hours have passed in game
     float Hours
     {
         get { return time / 3600f; }
     }
-
+    //determines how many minutes have passed in game
     float Minutes
     {
         get { return time % 3600f / 60f; }
     }
-
+    //this is the time that determines the current time and if over the current day based on seconds it adds another day then sets the time to 0 
+    //the tileScale is used to determine how fast or slow the days go by
     private void Update()
     {
         time += Time.deltaTime * timeScale;
@@ -71,9 +74,9 @@ public class DayTimeController : MonoBehaviour
         TimeAgents();
     }
 
-    
 
-    
+
+    //This is all used for the render using the time to determine the time of day and the associated color for the time of day
 
     private void TimeValueCalculation()
     {

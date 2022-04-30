@@ -34,6 +34,7 @@ public class ItemContainer : ScriptableObject
     public List<ItemSlot> slots;
     public bool isDirty;
 
+    //the method that adds the item to the invetory also determining if stackable or not
     public void Add(Item item, int count = 1)
     {
         isDirty = true;

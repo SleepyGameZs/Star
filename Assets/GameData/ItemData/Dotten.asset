@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: Dotten
   m_EditorClassIdentifier: 
   Name: 
-  stackAble: 0
+  stackable: 1
   icon: {fileID: 0}
+  onAction: {fileID: 0}
+  onTileAction: {fileID: 0}
+  onItemUsed: {fileID: 0}
+  crop: {fileID: 0}

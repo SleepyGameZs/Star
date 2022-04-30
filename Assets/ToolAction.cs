@@ -5,6 +5,7 @@ using UnityEngine.Tilemaps;
 
 public class ToolAction : ScriptableObject
 {
+    //The script used to assign ScriptableObjects like SeedTile, HoeTile, and etc
     public virtual bool OnApply(Vector2 worldPoint)
     {
         Debug.LogWarning("OnApply isn't implemented");
