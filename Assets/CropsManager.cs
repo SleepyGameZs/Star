@@ -113,7 +113,6 @@ public class CropsManager : TimeAgent
     internal void PickUp(Vector3Int gridPosition)
     {
         
-
         Vector2Int position = (Vector2Int)gridPosition;
         if (crops.ContainsKey(position) == false){ return; }
 
@@ -122,10 +121,9 @@ public class CropsManager : TimeAgent
         //This is to harvest the crop I need to make is so the item goes directly into the iventory
         if (cropsTile.Complete)
         {
-            GameManager.instance.inventoryContainer.Add(cropsTile.crop.yeild, cropsTile.crop.count);
-
             targetTileMap.SetTile(gridPosition, plowed);
             cropsTile.Harvested();
+            GameManager.instance.inventoryContainer.Add(cropsTile.crop.yeild, cropsTile.crop.count);
         }
     }
 }

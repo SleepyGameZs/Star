@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   stackable: 1
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 9089f129ab762d441888d656997e8391, type: 3}
   onAction: {fileID: 0}
   onTileAction: {fileID: 0}
   onItemUsed: {fileID: 0}
