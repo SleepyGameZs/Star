@@ -3,77 +3,77 @@ tags:
 colorID: 2
 position: 156,599
 ---
-Hurb: What do you need Joh- OH MY GORP AN ALEIN!
-Hurb: LOOK WE DON’T HAVE MUCH! JUST PLEASE DON’T EAT MY BRAINS! IT’S THE ONLY FORM OF ENTERTAINMENT AND TORTURE THAT I HAVE LEFT
-[[I was told you could help fix my ship?|First]]
+Hurb: What do you need Joh- OH MY GORP AN ALEIN! #line:0749072
+Hurb: LOOK WE DON’T HAVE MUCH! JUST PLEASE DON’T EAT MY BRAINS! IT’S THE ONLY FORM OF ENTERTAINMENT AND TORTURE THAT I HAVE LEFT #line:0389c3b
+[[I was told you could help fix my ship?|First]] #line:04ffbd1
 ===
 title: First
 tags: 
 colorID: 1
 position: 160,382
 ---
-Hurb: Oh. Dang, I thought something interesting was gonna happen.
-Hurb: Well, I would like to. But we’re dirt out of materials and money.
-Hurb: Actually we’ve got plenty of dirt. We just can’t grow nothing.
-[[I’ve got some seeds. How about I try to grow something?|Tutorial]]
+Hurb: Oh. Dang, I thought something interesting was gonna happen. #line:017b39b
+Hurb: Well, I would like to. But we’re dirt out of materials and money. #line:0615a54
+Hurb: Actually we’ve got plenty of dirt. We just can’t grow nothing. #line:0dad6d8
+[[I’ve got some seeds. How about I try to grow something?|Tutorial]] #line:0b3bea4
 ===
 title: Tutorial
 tags: 
 colorID: 0
 position: 159,167
 ---
-Hurb: I like your spirit, but we can’t grow anything here.
-Hurb: But if you want to try, we have a few plots of land.
-Hurb: As weird as it sounds, some scientists probably figured out how to “grow resources.” crazy right?
-[[...|Tutorial2]]
+Hurb: I like your spirit, but we can’t grow anything here. #line:0455104
+Hurb: But if you want to try, we have a few plots of land. #line:0478118
+Hurb: As weird as it sounds, some scientists probably figured out how to “grow resources.” crazy right? #line:0b25812
+[[...|Tutorial2]] #line:0ee3b69
 ===
 title: Tutorial2
 tags: 
 colorID: 0
 position: 159,-49
 ---
-Hurb:So apparently, you select the “hoe” tool using your mouse or scroll wheel.
-[[....|Tutorial3]]
+Hurb:So apparently, you select the “hoe” tool using your mouse or scroll wheel. #line:02aa2e2
+[[....|Tutorial3]] #line:0c80167
 ===
 title: Tutorial3
 tags: 
 colorID: 0
 position: 403,-44
 ---
-Hurb: You then use this tool to create holes in the ground using the mouse 1 button.
-[[.....|Tutorial4]]
+Hurb: You then use this tool to create holes in the ground using the mouse 1 button. #line:0e62dee
+[[.....|Tutorial4]] #line:02f46bc
 ===
 title: Tutorial4
 tags: 
 colorID: 0
 position: 642,-47
 ---
-Hurb: Then, you put these things called “seeds” from the toolbar, and planet them by using the mouse 1 button on the hole.
-[[......|Tutorial5]]
+Hurb: Then, you put these things called “seeds” from the toolbar, and planet them by using the mouse 1 button on the hole. #line:0e7d7c8
+[[......|Tutorial5]] #line:0d685cd
 ===
 title: Tutorial5
 tags: 
 colorID: 0
 position: 887,-50
 ---
-Hurb: Here’s the crazy part now.
-Hurb: After some time passes, it grows into usable materials!
-[[.......|Tutorial6]]
+Hurb: Here’s the crazy part now. #line:0bc2a58
+Hurb: After some time passes, it grows into usable materials! #line:02eb602
+[[.......|Tutorial6]] #line:0af326f
 ===
 title: Tutorial6
 tags: 
 colorID: 0
 position: 1125,-48
 ---
-Hurb: You then click on it again, and boom! It’s in your inventory! You can access your inventory by pressing I!
-[[Why don't you try doing it yourselves|Tutorial7]]
+Hurb: You then click on it again, and boom! It’s in your inventory! You can access your inventory by pressing I! #line:0f377b4
+[[Why don't you try doing it yourselves|Tutorial7]] #line:044eb43
 ===
 title: Tutorial7
 tags: 
 colorID: 0
 position: 1121,171
 ---
-Hurb: We tried doing it ourselves. But hoes don’t have a USP port.
-[[Ok, Thanks. I think I know what to do|Tutorial]]
-[[Can you run that by me again?|Tutorial]]
+Hurb: We tried doing it ourselves. But hoes don’t have a USP port. #line:0d31d7a
+[[Ok, Thanks. I think I know what to do|Tutorial]] #line:0fb6a2b
+[[Can you run that by me again?|Tutorial]] #line:0efc8ba
 ===

@@ -8,6 +8,17 @@ public class MovementScript : MonoBehaviour
     Rigidbody2D RBody2D;
     [SerializeField] float speed = 2f;
     Vector2 motionVector;
+    Animator animator;
+    string currentState;
+    const string PLAYER_IDLE = "Player_Idle";
+
+    const string PLAYER_UP = "Player_Walk_Up";
+    const string PLAYER_DOWN = "Player_Walk_Down";
+    const string PLAYER_LEFT = "Player_Walk_Left";
+    const string PLAYER_RIGHT = "Player_Walk_Right";
+
+
+
 
     void Awake()
     {
@@ -27,5 +38,16 @@ public class MovementScript : MonoBehaviour
     private void Move()
     {
         RBody2D.velocity = motionVector * speed;
+    }
+
+
+
+    void ChangeAnimationState(string newState)
+    {
+        if (currentState == newState) return;
+
+        animator.Play(newState);
+
+        currentState = newState;
     }
 }
