@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class ButtonManagerHurb : MonoBehaviour
 {
-    // Start is called before the first frame update
-
     public Button hurbButton;
     public GameObject narrative;
 
@@ -20,10 +18,5 @@ public class ButtonManagerHurb : MonoBehaviour
     {
         narrative.SetActive(true);
         Debug.Log("hihi");
-    }
-        // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

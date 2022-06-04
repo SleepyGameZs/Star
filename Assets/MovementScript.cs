@@ -17,12 +17,12 @@ public class MovementScript : MonoBehaviour
     public Vector2 lastMotionVector;
     public Animator animator;
     public bool moving;
-
+    /*
     const string PLAYER_UP = "Player_Walk_Up";
     const string PLAYER_DOWN = "Player_Walk_Down";
     const string PLAYER_LEFT = "Player_Walk_Left";
     const string PLAYER_RIGHT = "Player_Walk_Right";
-
+    */
 
 
 
@@ -66,7 +66,7 @@ public class MovementScript : MonoBehaviour
     }
 
 
-
+/*
     void ChangeAnimationState(string newState)
     {
         if (currentState == newState) return;
@@ -75,4 +75,5 @@ public class MovementScript : MonoBehaviour
 
         currentState = newState;
     }
+*/
 }
