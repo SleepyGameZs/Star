@@ -51,11 +51,4 @@ public class GoingToFarmScript : MonoBehaviour
         }
     }
 
-
-    /* public void ButtonClicked()
-    {
-        farmButton.SetActive(false);
-        SceneManager.LoadScene("SampleScene");
-    }*/
-
 }
