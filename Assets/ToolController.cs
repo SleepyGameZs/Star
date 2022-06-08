@@ -8,13 +8,12 @@ public class ToolController : MonoBehaviour
 {
     MovementScript character;
     Rigidbody2D rigbody2D;
+    ToolBarController toolBarController;
     [SerializeField] float offsetDistance = 1f;
-    [SerializeField] float sizeOfInteractableArea = 2f;
+    [SerializeField] float sizeOfInteractableArea = 3f;
     [SerializeField] TileReaderController tileReaderController;
     [SerializeField] MarkerManger markerManger;
     [SerializeField] float maxDistance = 2.5f;
-    [SerializeField] CropsManager cropsManager;
-    [SerializeField] TileData plowAbleTile;
 
     Vector3Int selectedTilePosition;
     bool selectable;
@@ -23,6 +22,7 @@ public class ToolController : MonoBehaviour
     {
         character = GetComponent<MovementScript>();
         rigbody2D = GetComponent<Rigidbody2D>();
+        toolBarController = GetComponent<ToolBarController>();
     }
 
     private void Update()
@@ -58,42 +58,45 @@ public class ToolController : MonoBehaviour
         markerManger.markedCellPosition = selectedTilePosition;
     }
 
-    
+    //If ever needed add the need pick axe or what ever to work here
     private bool UseToolWorld()
     {
         Vector2 posistion = rigbody2D.position + character.lastMotionVector * offsetDistance;
 
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(posistion, sizeOfInteractableArea);
+        Item item = toolBarController.GetItem;
+        if(item == null) { return false; }
+        if (item.onAction == null) {return false; }
 
-        foreach (Collider2D c in colliders)
+        bool complete = item.onAction.OnApply(posistion);
+
+        if (complete == true)
         {
-            ToolHit hit = c.GetComponent<ToolHit>();
-            if(hit != null)
+            if (item.onItemUsed != null)
             {
-                hit.Hit();
-                return true;
+                item.onItemUsed.OnItemUsed(item, GameManager.instance.inventoryContainer);
             }
         }
-        return false;
+
+        return complete;
     }
     private void UseToolGrid()
     {
         if(selectable == true)
         {
-            TileBase tileBase = tileReaderController.GetTileBase(selectedTilePosition);
-            TileData tileData = tileReaderController.GetTileData(tileBase);
-            if(tileData != plowAbleTile)
+            Item item = toolBarController.GetItem;
+            if(item == null) { return; }
+            if(item.onTileAction == null) { return; }
+
+            bool complete = item.onTileAction.OnApplyToTileMap(selectedTilePosition, tileReaderController, item);
+
+            if(complete == true)
             {
-                return;
-            }
-            if (cropsManager.Check(selectedTilePosition))
-            {
-                cropsManager.Seed(selectedTilePosition);
-            }
-            else
-            {
-                cropsManager.Plow(selectedTilePosition);
+                if(item.onItemUsed != null)
+                {
+                    item.onItemUsed.OnItemUsed(item, GameManager.instance.inventoryContainer);
+                }
             }
         }
+
     }
 }
