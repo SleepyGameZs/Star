@@ -12,8 +12,6 @@ public class gmscript : MonoBehaviour
 
     public GameObject Title;
 
-    //public GameObject CutSceneVideo;
-
     public VideoPlayer CutScene;
 
     public GameObject videom;
@@ -24,9 +22,9 @@ public class gmscript : MonoBehaviour
 
     void Start()
     {
-        skipbutton.SetActive(false);
+        skipbutton.SetActive(false); //This is the play button that appears on the cutscene. 
 
-        videom.SetActive(false);
+        videom.SetActive(false); // The video will not play right away. 
     }
   
     void Update()
@@ -36,11 +34,14 @@ public class gmscript : MonoBehaviour
 
     public void PlayVideo()
     {
+        skipbutton.SetActive(true);
+        playButton.SetActive(false); //hide the first button
+
+        GetComponent<AudioSource>().Play(); //Play the button click sound
+
         CutScene.Play();
 
-        skipbutton.SetActive(true);
-
-        Title.SetActive(false);
+        Title.SetActive(false); // hide the title screen
         videom.SetActive(true);
 
        
@@ -48,6 +49,8 @@ public class gmscript : MonoBehaviour
 
     public void next()
     {
+        GetComponent<AudioSource>().Play(); //Play the button click sound
+
         SceneManager.LoadScene("SampleScene");
     }
     
