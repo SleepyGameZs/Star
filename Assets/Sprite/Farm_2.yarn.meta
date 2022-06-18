@@ -1,0 +1,46 @@
+fileFormatVersion: 2
+guid: dcbcd56bcf48341429fb9c0d3ff3c25e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - Farm_2-First-0
+  - Farm_2-First-1
+  - Farm_2-First-2
+  - Farm_2-First-3
+  - Farm_2-Second-4
+  - Farm_2-Second-5
+  - Farm_2-Second-6
+  - Farm_2-Second-7
+  - Farm_2-Tutorial-8
+  - Farm_2-Tutorial-9
+  - Farm_2-Tutorial-10
+  - Farm_2-Tutorial-11
+  - Farm_2-Tutorial2-12
+  - Farm_2-Tutorial2-13
+  - Farm_2-Tutorial3-14
+  - Farm_2-Tutorial3-15
+  - Farm_2-Tutorial4-16
+  - Farm_2-Tutorial4-17
+  - Farm_2-Tutorial5-18
+  - Farm_2-Tutorial5-19
+  - Farm_2-Tutorial5-20
+  - Farm_2-Tutorial6-21
+  - Farm_2-Tutorial6-22
+  - Farm_2-Tutorial7-23
+  - Farm_2-Tutorial7-24
+  - Farm_2-Tutorial7-25
+  - Farm_2-Start-26
+  - Farm_2-Start-27
+  - Farm_2-Farm-28
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

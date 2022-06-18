@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f019cfbf13e54aa40b506aa1f68c80cf, type: 3}
+  m_Name: Dotten Crop
+  m_EditorClassIdentifier: 
+  timeToGrow: 20
+  yeild: {fileID: 11400000, guid: 2d3dbd42b2e771947affa4b17076afd0, type: 2}
+  count: 1
+  spites:
+  - {fileID: 21300000, guid: 45bfda4cd06ab6443a321ddb92b903bb, type: 3}
+  - {fileID: 21300000, guid: f45a854d19b9a1f4a829766ba743af39, type: 3}
+  - {fileID: 21300000, guid: 8be4ed1d1db3b7346847eb76b434d8a9, type: 3}
+  - {fileID: 21300000, guid: 8b8d12b53df83144ca4bdb82f1bd4f08, type: 3}
+  growthStageTime: 03000000050000000e00000014000000

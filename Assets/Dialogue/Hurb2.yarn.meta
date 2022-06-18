@@ -1,0 +1,46 @@
+fileFormatVersion: 2
+guid: 4f0690469b39cda4aaac7333dbdded03
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - Hurb2-First-0
+  - Hurb2-First-1
+  - Hurb2-First-2
+  - Hurb2-Second-3
+  - Hurb2-Second-4
+  - Hurb2-Second-5
+  - Hurb2-Second-6
+  - Hurb2-Tutorial-7
+  - Hurb2-Tutorial-8
+  - Hurb2-Tutorial-9
+  - Hurb2-Tutorial-10
+  - Hurb2-Tutorial2-11
+  - Hurb2-Tutorial2-12
+  - Hurb2-Tutorial3-13
+  - Hurb2-Tutorial3-14
+  - Hurb2-Tutorial4-15
+  - Hurb2-Tutorial4-16
+  - Hurb2-Tutorial5-17
+  - Hurb2-Tutorial5-18
+  - Hurb2-Tutorial5-19
+  - Hurb2-Tutorial6-20
+  - Hurb2-Tutorial6-21
+  - Hurb2-Tutorial7-22
+  - Hurb2-Tutorial7-23
+  - Hurb2-Tutorial7-24
+  - Hurb2-Start-25
+  - Hurb2-Start-26
+  - Hurb2-Start-27
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 4f0690469b39cda4aaac7333dbdded03,
+    type: 3}
+  localizations: []
