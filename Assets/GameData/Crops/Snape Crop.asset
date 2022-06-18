@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f019cfbf13e54aa40b506aa1f68c80cf, type: 3}
   m_Name: Snape Crop
   m_EditorClassIdentifier: 
-  timeToGrow: 10
+  timeToGrow: 20
   yeild: {fileID: 11400000, guid: a035dc7909005db4b88e6894bfd7dc39, type: 2}
   count: 1
   spites:
   - {fileID: 21300000, guid: 9b5139afcf2fa334d8d4ac206dfad90d, type: 3}
   - {fileID: 21300000, guid: 56c122e4febfb61479e80195921dc396, type: 3}
   - {fileID: 21300000, guid: 1159db5f02d8ef0479f9a983335eac9f, type: 3}
-  - {fileID: 21300000, guid: 54c58ab08e3d50c4e999aa99d9603e58, type: 3}
-  growthStageTime: 06000000080000000a0000000c000000
+  - {fileID: 21300000, guid: 7fdc617ffccc7544aac01b732a472594, type: 3}
+  growthStageTime: 0a0000000e0000001400000018000000
