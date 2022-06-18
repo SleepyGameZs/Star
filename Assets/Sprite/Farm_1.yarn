@@ -1,0 +1,94 @@
+title: First
+tags: 
+colorID: 2
+position: 443,493
+---
+Hurb: What do you need Joh- OH MY GORP AN ALEIN!
+Hurb: LOOK WE DON’T HAVE MUCH! JUST PLEASE DON’T EAT MY BRAINS! 
+Hurb: IT’S THE ONLY FORM OF ENTERTAINMENT AND TORTURE THAT I HAVE LEFT
+[[I was told you could help fix my ship?|Second]]
+===
+title: Second
+tags: 
+colorID: 1
+position: 182,492
+---
+Hurb: Oh. Dang, I thought something interesting was gonna happen.
+Hurb: Well, I would like to. But we’re dirt out of materials and money.
+Hurb: Actually we’ve got plenty of dirt. We just can’t grow nothing.
+[[I’ve got some seeds. How about I try to grow something?|Tutorial]]
+===
+title: Tutorial
+tags: 
+colorID: 0
+position: 169,214
+---
+Hurb: I like your spirit, but we can’t grow anything here.
+Hurb: But if you want to try, we have a few plots of land.
+Hurb: As weird as it sounds, some scientists probably figured out how to “grow resources.” crazy right?
+[[...|Tutorial2]]
+===
+title: Tutorial2
+tags: 
+colorID: 0
+position: 159,-49
+---
+Hurb:So apparently, you select the “hoe” tool using your mouse or scroll wheel.
+[[....|Tutorial3]]
+===
+title: Tutorial3
+tags: 
+colorID: 0
+position: 403,-44
+---
+Hurb: You then use this tool to create holes in the ground using the mouse 1 button.
+[[.....|Tutorial4]]
+===
+title: Tutorial4
+tags: 
+colorID: 0
+position: 642,-47
+---
+Hurb: Then, you put these things called “seeds” from the toolbar, and planet them by using the mouse 1 button on the hole.
+[[......|Tutorial5]]
+===
+title: Tutorial5
+tags: 
+colorID: 0
+position: 887,-50
+---
+Hurb: Here’s the crazy part now.
+Hurb: After some time passes, it grows into usable materials!
+[[.......|Tutorial6]]
+===
+title: Tutorial6
+tags: 
+colorID: 0
+position: 1126,-48
+---
+Hurb: You then click on it again, and boom! It’s in your inventory! You can access your inventory by pressing I!
+[[Why don't you try doing it yourselves|Tutorial7]]
+===
+title: Tutorial7
+tags: 
+colorID: 0
+position: 1141,205
+---
+Hurb: We tried doing it ourselves. But hoes don’t have a USP port.
+[[Ok, Thanks. I think I know what to do|Farm]]
+[[Can you run that by me again?|Tutorial]]
+===
+title: Start
+tags: 
+colorID: 0
+position: 707,494
+---
+[[What is that thing-|First]]
+===
+title: Farm
+tags: 
+colorID: 0
+position: 1453,209
+---
+Hurb: Great! Lets get started
+===

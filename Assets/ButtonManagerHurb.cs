@@ -12,7 +12,6 @@ public class ButtonManagerHurb : MonoBehaviour
     void Start()
     {
         Button btn = hurbButton.GetComponent<Button>();
-        
     }
     public void TaskOnClick()
     {
